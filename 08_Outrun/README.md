@@ -34,7 +34,7 @@ void drawSpriteOnTheRight(sf::RenderWindow& window, sf::Sprite& sprite, const Ho
 }
 ```
 
-Having rendered the road, one can render the sprites according to this road and scale the sprites accordingly.
+Having rendered the road, one can render the sprites according to this road and scale the sprites accordingly. To check how this works, substitue `projectedLine.x+projectedLine.length` by `projectedLine.x-projectedLine.length` or by `projectedLine.x-1.5f*projectedLine.length`.
 
 ```cpp
 float percentOfSegmentBeaten = (cameraCoords.z-beatenSegment*segmentLength)/segmentLength;

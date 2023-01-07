@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp> // RenderWindow; Event; Texture; Sprite;
 #include <math.h>
 #include <iostream>
+#include <Windows.h> // FreeConsole();
 
 // Constant game variables
 const short screenWidth=768, screenHeight=768;
@@ -73,6 +74,9 @@ void drawSpriteOnTheRight(sf::RenderWindow& window, sf::Sprite& sprite, const Ho
 
 int main()
 {
+  FreeConsole(); // No command prompt window will be displayed
+
+  // ---------------------------------------------------------
   // Game variables
   Vector3f cameraCoords = { 0.f, 100.f, 0.f};
   int beatenSegment=0; // Beaten road segment
@@ -134,7 +138,7 @@ int main()
     while(window.pollEvent(e))
     {
       if(e.type == sf::Event::Closed)
-        window.close();
+        { delete roadCoords; window.close(); }
     }
 
     // Keyboard events
