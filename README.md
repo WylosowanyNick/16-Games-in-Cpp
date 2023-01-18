@@ -10,7 +10,7 @@ During the development of these games I have partially aid myself with the sourc
 ## Building and Running the games
 
 - Download [SFML (GCC 7.3.0 MinGW (DW2) - 32-bit)](https://www.sfml-dev.org/download.php). SFML should be organized in this project folder, as presented in [tree.txt](tree.txt) (Simply extract and rename appropriately SFML.)
-- For building the games MinGW is required. Having installed MinGW run script *Makefile.cmd*.
+- For building the games MinGW is required. Having installed MinGW run script *Build.cmd*.
 - To run the games one should run script *Run.cmd*, which includes the path to necessary DLLs for the game running.
 
 ## License
