@@ -1,5 +1,5 @@
 @echo off
-pushd ..\SFML\bin
+pushd ..\SFML
 set PATH=%PATH%;%CD%
 popd
 main.exe

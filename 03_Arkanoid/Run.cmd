@@ -1,5 +1,5 @@
-set current_dir=%CD%
-cd ../SFML
+@echo off
+pushd ..\SFML\bin
 set PATH=%PATH%;%CD%
-cd %current_dir%
+popd
 main.exe
